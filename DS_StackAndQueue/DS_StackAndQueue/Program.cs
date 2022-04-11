@@ -16,4 +16,5 @@ my_Stack.Peek();
 
 Console.WriteLine("Befor Pop");
 my_Stack.Pop();
+my_Stack.IsEmpty();
 my_Stack.Show();
