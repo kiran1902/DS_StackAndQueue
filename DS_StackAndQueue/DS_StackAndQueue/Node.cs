@@ -10,10 +10,11 @@ namespace DS_StackAndQueue
     {
         public Gtype val;
         public Node<Gtype> next;
+        public Node<Gtype> data;
 
-        public Node(Gtype Data)
+        public Node(Gtype data)
         {
-            this.val = Data;
+            this.val = data;
             this.next = null;
         }
     }
