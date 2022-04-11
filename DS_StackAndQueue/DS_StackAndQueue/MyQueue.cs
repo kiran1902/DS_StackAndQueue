@@ -51,5 +51,50 @@ namespace DS_StackAndQueue
             }
             Console.WriteLine(temp.val);
         }
+
+        ///<summary>
+        ///Methods to delete element from the Queue
+        ///</summary>
+        public Gtype Dequeue()
+        {
+            //variable
+            Node<Gtype> temp;
+
+            if (IsEmpty())
+            {
+                Console.WriteLine("Queue is Empty");
+                return default(Gtype);
+            }
+            else
+            {
+                temp = front;
+
+                if (front.next == null)
+                {
+                    front = null;
+                }
+                else
+                {
+                    front = front.next;
+                }
+                return temp.val;
+            }
+
+        }
+
+        ///<summary>
+        ///Methods to check wether the Queue is empty
+        ///</summary>
+        public bool IsEmpty()
+        {
+            if (front is null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
