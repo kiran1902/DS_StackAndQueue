@@ -34,6 +34,44 @@ namespace DS_StackAndQueue
         }
 
         ///<summary>
+        ///Methods to show the top most data
+        ///</summary>
+        public Gtype Peek()
+        {
+            return top.val;
+        }
+
+        ///<summary>
+        ///Methods to check wether the stack is empty
+        ///</summary>
+        public bool IsEmpty()
+        {
+            if (top is null) return true;
+            else return false;
+        }
+
+        ///<summary>
+        ///Methods to pop the element form the stack
+        ///</summary>
+        public Gtype Pop()
+        {
+            if (IsEmpty())
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else if (top.next is null)
+            {
+                top = null;
+            }
+            else
+            {
+                top = top.next;
+            }
+            return default(Gtype);
+
+        }
+
+        ///<summary>
         ///Methods to show elements in the stack
         ///</summary>
         public void Show()

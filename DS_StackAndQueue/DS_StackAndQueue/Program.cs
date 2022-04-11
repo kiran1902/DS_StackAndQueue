@@ -3,12 +3,17 @@
 Console.WriteLine("Welcome to Stack And Queue");
 
 /// <summary>
- /// UC1 - Create a New Stack. 
+ /// UC2 - Create a Peek and Pop method 
  /// </summary
 
 My_Stack<int> my_Stack = new My_Stack<int>();
 my_Stack.Push(70);
 my_Stack.Push(30);
 my_Stack.Push(56);
+my_Stack.Show();
 
+my_Stack.Peek();
+
+Console.WriteLine("Befor Pop");
+my_Stack.Pop();
 my_Stack.Show();
